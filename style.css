@@ -1,9 +1,15 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
 }
 
 .header .container {
-    width: 1276px;
+    width: 1265px;
     margin: 0 auto;
     padding-top: 24px;
     display: flex;
@@ -15,30 +21,31 @@
     background: #000000;
 }
 
-.header__center {
+.header__content {
     display: flex;
     justify-content: space-between;
 }
 
-.header__center-left {
+.header__content-series {
 
     margin-right: 115px;
 }
 
-.center__left-nav {
+.content__nav {
     display: flex;
 }
 
-.center__left-list {
+.header__content-series {
+    display: flex;
     list-style-type: none;
     align-items: center;
 }
 
-.center__left-list {
+.content__list {
     margin-right: 43px;
 }
 
-.center__left-link {
+.content__series-link {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -49,21 +56,21 @@
 
 }
 
-.center__left-list:last-child {
+.content__lseries-link:last-child {
     margin-right: 0;
 }
 
-.center__right-nav {
+.header__content-schelude {
     display: flex;
 }
 
-.center__right-list {
-    list-style-type: none;
+.schelude__list {
+    display: flex;
     align-items: center;
+    list-style: none;
 }
 
-
-.center__right-link {
+.schelude__link {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -71,18 +78,16 @@
     line-height: 16px;
     text-decoration: none;
     color: #FFFFFF;
-
+    margin-right: 50px;
 }
 
-.center__right-list {
-    margin-right: 59px;
-}
 
-.center__right-list:last-child {
+
+.schelude__link:last-child {
     margin-right: 0;
 }
 
-.right__button {
+.button__sign {
     background: #0059C1;
     border-radius: 12px;
     padding: 11px 33px;
@@ -97,35 +102,58 @@
     color: #FFFFFF;
 }
 
-.last {
+.hero {
     background-color: #000000;
+
 }
 
-.last .container {
-    max-width: 1274px;
+.hero .container {
+    max-width: 1276px;
     margin: 0 auto;
     padding-bottom: 20px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 47.73%, #000000 84.54%), url(./assets/img/fon.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 47.73%, #000000 84.54%), url(./assets/img/fon.png);
     background-size: cover;
     background-repeat: no-repeat;
-
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
 }
 
 
-.last-img {
-    margin-top: 342px;
-    margin-left: 308px;
-    margin-bottom: 30px;
+
+
+.hero-img {
+    padding-top: 342px;
+    margin: 0 auto;
+
 }
 
-hr {
-    width: 500px;
+.hero-watch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero-line_basic {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
-    color: rgba(255, 255, 255, 0.5);
 }
 
-.last-text {
-    margin-left: 548px;
+.hero-line_cursor {
+    border-bottom: 1px solid #E3B100;
+    width: 100px;
+}
+
+.hero-line {
+    border-bottom: 1px solid #fff;
+    width: 500px;
+}
+
+.hero-text {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -137,15 +165,8 @@ hr {
     color: #FFFFFF;
 }
 
-.last-text::before {
-    content: '';
-    position: absolute;
-    background-image: url("./assets/img/last-play.svg");
-    top: -10px;
-    left: -50px;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
+.hero-trailer {
+    margin-right: 10px;
 }
 
 .cards {
@@ -155,11 +176,17 @@ hr {
 }
 
 .cards .container {
-    max-width: 1366px;
+    max-width: 1290px;
     margin: 0 auto;
+
 }
 
-.top__title {
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.cards__title {
 
     font-family: 'Lato';
     font-style: normal;
@@ -168,49 +195,136 @@ hr {
     line-height: 38px;
 
     color: #FFFFFF;
+    margin-bottom: 24px;
 }
 
-.cards__center {
+.cards-content {
     display: flex;
 }
 
-.cards-img {
+.card {
+    width: 210px;
     margin-right: 24px;
+    height: 300px;
 }
 
-.card-1:hover {
-    filter: blur(5px);
-    transition: 0.1s;
+.card:last-child {
+    margin-right: 0;
 }
 
-.card-1:hover {
-    filter: blur(5px);
-    transition: 0.1s;
+.card-visible {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
 }
 
-.card-2:hover {
-    filter: blur(5px);
-    transition: 0.1s;
+.card-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-.card-3:hover {
-    filter: blur(5px);
-    transition: 0.1s;
+.card-inside {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    opacity: 0;
 }
 
-.card-4:hover {
-    filter: blur(5px);
-    transition: 0.1s;
+.card-inside:hover {
+    opacity: 1;
+    transition: 0.4s;
 }
 
-.card-5:hover {
-    filter: blur(5px);
-    transition: 0.1s;
+.star {
+    margin-right: 6px;
 }
 
-.card-6:hover {
-    filter: blur(5px);
-    transition: 0.1s;
+.number {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #E3B100;
+}
+
+.card-year {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.season {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    margin-top: 56px;
+    margin-bottom: 7px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.card-title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    white-space: nowrap;
+    color: #FFFFFF;
+    margin-bottom: 7px;
+}
+
+.card-subtitle {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+
+    color: #E8E8E8;
+    margin-bottom: 48px;
+}
+
+.card-button {
+    background: #0059C1;
+    border-radius: 12px;
+    width: 170px;
+    height: 38px;
+    border: none;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    padding-right: 20px;
+    text-align: right;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.card-button::before {
+    content: '';
+    top: 12px;
+    left: 16px;
+    width: 12px;
+    height: 14px;
+    background: url(./assets/img/arrow.svg);
+    position: absolute;
 }
 
 .sub {
@@ -221,9 +335,10 @@ hr {
     max-width: 1290px;
     margin: 0 auto;
     padding-bottom: 20px;
+
 }
 
-.sub__top {
+.sub-title__text {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 900;
@@ -235,27 +350,39 @@ hr {
     margin-bottom: 24px;
 }
 
-.sub__center {
+.sub__cards {
     display: flex;
     justify-content: center;
 }
 
-.center__card-1 {
+.sub__cards-first {
     background: linear-gradient(90deg, rgba(0, 89, 193, 0.5) 0%, rgba(13, 0, 123, 0.5) 100%);
     border: 1px solid rgba(0, 89, 193, 0.5);
     border-radius: 12px;
+    width: 502px;
+    height: 296px;
+    transform: translateX(97px);
+    opacity: 0.2;
+
 }
 
-.center__card-2 {
+.sub__cards-second {
     background: linear-gradient(90deg, rgba(0, 89, 193, 0.5) 0%, rgba(13, 0, 123, 0.5) 100%);
     border: 1px solid rgba(0, 89, 193, 0.5);
     border-radius: 12px;
+    width: 502px;
+    height: 296px;
+    z-index: 1;
 }
 
-.center__card-3 {
+.sub__cards-third {
     background: linear-gradient(90deg, rgba(0, 89, 193, 0.5) 0%, rgba(13, 0, 123, 0.5) 100%);
     border: 1px solid rgba(0, 89, 193, 0.5);
     border-radius: 12px;
+    width: 502px;
+    height: 296px;
+    transform: translateX(-116px);
+    opacity: 0.2;
 }
 
 .card__title {
@@ -265,12 +392,17 @@ hr {
     font-size: 30px;
     line-height: 36px;
     /* identical to box height */
-
+    margin-top: 32px;
     text-align: center;
     color: #FFFFFF;
 }
 
-.center__list-item {
+.sub__card-list {
+    margin-top: 35px;
+    margin-left: 32px;
+}
+
+.sub__list-item {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 500;
@@ -280,13 +412,14 @@ hr {
     color: #FFFFFF;
 }
 
-.center__buttons {
+.sub__buttons {
     display: flex;
     justify-content: end;
     margin-right: 32px;
+    margin-top: 32px;
 }
 
-.button__left {
+.button__sub {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 900;
@@ -299,7 +432,7 @@ hr {
     color: #FFFFFF;
 }
 
-.button__right {
+.button__sub-primary {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 500;
