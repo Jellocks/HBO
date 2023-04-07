@@ -660,6 +660,7 @@ button {
 .input-email,
 .input-password {
     width: 733px;
+    background: transparent;
 }
 
 .input-name,
