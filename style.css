@@ -26,6 +26,11 @@ button {
     justify-content: space-between;
 }
 
+.header__button {
+    display: flex;
+    align-items: center;
+}
+
 .header__content-series {
 
     margin-right: 115px;
@@ -39,10 +44,15 @@ button {
     display: flex;
     list-style-type: none;
     align-items: center;
+
 }
 
 .content__list {
     margin-right: 43px;
+}
+
+.content__list:last-child {
+    margin-right: 0;
 }
 
 .content__series-link {
@@ -78,13 +88,14 @@ button {
     line-height: 16px;
     text-decoration: none;
     color: #FFFFFF;
-    margin-right: 50px;
+    margin-right: 40px;
 }
 
 
 
 .schelude__link:last-child {
     margin-right: 0;
+    transform: translateX(20px);
 }
 
 .button__sign {
@@ -97,7 +108,7 @@ button {
     font-size: 15px;
     line-height: 18px;
     /* identical to box height */
-
+    text-decoration: none;
 
     color: #FFFFFF;
 }
@@ -118,6 +129,7 @@ button {
     justify-content: center;
     flex-direction: column;
     position: relative;
+    padding-bottom: 31px;
 }
 
 
@@ -143,15 +155,22 @@ button {
     margin-bottom: 20px;
 }
 
-.hero-line_cursor {
-    border-bottom: 1px solid #E3B100;
-    width: 100px;
-}
-
 .hero-line {
     border-bottom: 1px solid #fff;
     width: 500px;
+    position: relative;
 }
+
+.hero-line_cursor {
+    border-bottom: 1px solid #E3B100;
+    width: 100px;
+    position: absolute;
+    top: 513px;
+    left: 388px;
+    z-index: 1;
+}
+
+
 
 .hero-text {
     font-family: 'Lato';
@@ -169,10 +188,17 @@ button {
     margin-right: 10px;
 }
 
+.hero-button {
+    background: url("./assets/img/last-play.svg");
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
 .cards {
     background-color: #000000;
     padding-top: 24px;
-    padding-bottom: 81px;
+    padding-bottom: 80px;
 }
 
 .cards .container {
@@ -181,6 +207,9 @@ button {
 
 }
 
+.cards-content {
+    overflow-x: auto;
+}
 
 ::-webkit-scrollbar {
     display: none;
@@ -334,10 +363,15 @@ button {
 }
 
 .sub .container {
-    max-width: 1290px;
+    /* max-width: 1290px; */
     margin: 0 auto;
     padding-bottom: 20px;
 
+}
+
+.sub-title {
+    width: 1270px;
+    margin: 0 auto;
 }
 
 .sub-title__text {
@@ -346,10 +380,10 @@ button {
     font-weight: 900;
     font-size: 32px;
     line-height: 38px;
-
+    margin-left: -4px;
     color: #FFFFFF;
-    padding-top: 20px;
     margin-bottom: 24px;
+
 }
 
 .sub__cards {
@@ -410,7 +444,7 @@ button {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-
+    margin-bottom: 14px;
     color: #FFFFFF;
 }
 
@@ -445,4 +479,266 @@ button {
     background: transparent;
     padding: 9px 44px;
     color: #FFFFFF;
+}
+
+.sign-in {
+    background: #000000;
+}
+
+.sign-in .container {
+    max-width: 1068px;
+    margin: 0 auto;
+    background: url(./assets/img/sign-in__inner.png);
+    background-position: center;
+}
+
+.sign-in__title {
+    text-align: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.sign-in__subtitle {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.sign-in__cards {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.card-first {
+    width: 502px;
+    height: 250px;
+    background: linear-gradient(90deg, rgba(0, 89, 193, 0.5) 0%, rgba(13, 0, 123, 0.5) 100%);
+    border-radius: 12px;
+    margin-right: 35px;
+}
+
+.card-inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.card-name {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    /* identical to box height */
+
+    margin-left: 32px;
+    color: #FFFFFF;
+}
+
+.card-price {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    margin-right: 32px;
+    color: #FFFFFF;
+}
+
+.cards-subtitle {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    margin-left: 32px;
+    color: #FFFFFF;
+}
+
+.cards-button {
+    padding: 9px 16px;
+    width: 93px;
+    height: 40px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+    background: #E38B00;
+    border-radius: 12px;
+    margin-left: 377px;
+}
+
+.card-second__subtitle {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+
+    color: #FFFFFF;
+    margin-left: 32px;
+    margin-bottom: 25px;
+}
+
+.card-second {
+    width: 502px;
+    height: 250px;
+
+    background: linear-gradient(90deg, rgba(0, 89, 193, 0.5) 0%, rgba(13, 0, 123, 0.5) 100%);
+    border: 1px solid rgba(0, 89, 193, 0.5);
+    border-radius: 12px;
+    position: relative;
+}
+
+.card-img {
+    position: absolute;
+    top: -9px;
+    right: -9px;
+}
+
+.account {
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+.account__naming {
+    display: flex;
+    gap: 30px;
+}
+
+.input {
+    outline: none;
+    background: #000000;
+    border: none;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #d9d9d9;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-name,
+.input-surname {
+    display: flex;
+    max-width: 350px;
+    width: 100%;
+    gap: 32px;
+    background: transparent;
+}
+
+.input-email,
+.input-password {
+    width: 733px;
+}
+
+.input-name,
+.input-surname,
+.input-email {
+    margin-bottom: 24px;
+}
+
+.input:focus {
+    border-bottom: 2px solid #e38b00;
+}
+
+.signin__check-block {
+    margin: 19px 0 32px 0;
+    display: flex;
+}
+
+.spam {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 15px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 32px;
+}
+
+#checkbox-spam {
+    opacity: 0;
+    display: none;
+}
+
+#checkbox-spam~label::before {
+    content: "";
+    text-align: center;
+    color: white;
+    line-height: 10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #d9d9d9;
+    border-radius: 0.25em;
+    margin: 0.25em;
+    display: inline-block;
+}
+
+#checkbox-spam:checked~label::before {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+    border: 1px solid #e38b00;
+}
+
+.account-button {
+    width: 733px;
+    height: 40px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+
+    background: #0059C1;
+    border-radius: 12px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.account-privacy {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+}
+
+span {
+    color: #E38B00;
+    cursor: pointer;
+    text-decoration: underline #E38B00;
 }
