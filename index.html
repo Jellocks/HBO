@@ -15,30 +15,82 @@
 <body>
     <header class="header">
         <div class="container">
+
             <div class="header__HBO">
                 <img src="./assets/img/header-logo.svg" alt="header-logo" class="header__logo">
             </div>
             <nav class="header__content">
                 <div class="header__content-series">
                     <ul class="content__nav">
-                        <li class="content__list"><a href="#" class="content__series-link">SERIES</a></li>
-                        <li class="content__list"><a href="#" class="content__series-link">MOVIES</a></li>
+                        <li class="content__list"><a href="#tvshows" class="content__series-link">SERIES</a></li>
+                        <li class="content__list"><a href="#movies" class="content__series-link">MOVIES</a></li>
+                        <li class="content__list"><a href="#cartoons" class="content__series-link">CARTOONS</a></li>
                     </ul>
                 </div>
                 <div class="header__content-schelude">
                     <ul class="schelude__list">
-                        <li class="schelude__link">FREE EPISODES</li>
-                        <li class="schelude__link">SCHEDULE</li>
+                        <li class="schelude__link"><a href="index1.html" class="content__series-link">FREE
+                                EPISODES</a>
+                        </li>
+                        <li class="schelude__link"><a href="index3.html" class="content__series-link">SCHELUDE</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
             <div class="header__button">
-                <a href="./index1.html" class="button__sign">SIGN IN</a>
+                <a href="#" class="button__sign">SIGN IN</a>
+            </div>
+            <div class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <div class="content-menu no">
+                <ul class="menu-list">
+                    <li class="menu-list__item"><a href="" class="content-menu__link">SERIES</a></li>
+                    <li class="menu-list__item"><a href="" class="content-menu__link">MOVIES</a></li>
+                    <li class="menu-list__item"><a href="" class="content-menu__link">SCHEDULE</a></li>
+                    <li class="menu-list__item"><a href="" class="content-menu__link">FREE EPISODES</a></li>
+                </ul>
+                <button class="content-menu_button">SIGN IN</button>
             </div>
         </div>
+
+
     </header>
-    <section class="hero">
+    <section class="sign-up disabled">
         <div class="container">
+            <h1 class="sign-in__title">SIGN UP</h1>
+            <img src="./assets/img/close.svg" alt="" class="sign-in_close">
+            <h2 class="sign-in__subtitle">Create an account</h2>
+
+        </div>
+        <form class="account">
+            <h4 class="account-title">Create an account</h4>
+            <div class="account__naming">
+                <input class="input input-name" type="text" name="name" placeholder="Your name" />
+                <input class="input input-surname" type="text" name="surname" placeholder="Your last name" />
+            </div>
+            <input class="input input-email" type="email" name="email" placeholder="Email" />
+            <input class="input input-password" type="password" name="password" placeholder="Password" />
+            <div class="signin__check-block">
+                <input id="checkbox-spam" type="checkbox" name="checkbox" />
+                <label for="checkbox-spam" class="checkbox-custom"></label>
+                <p class="spam">
+                    Use my email address to send marketing promotions and offers from
+                    HBO Max (a WarnerMedia company) and Affiliates via email, social
+                    media and other channels
+                </p>
+            </div>
+            <button class="account-button">CREATE</button>
+            <p class="account-privacy">To withdraw your consent (including any consent you have previously given)
+                and to learn more about your rights and how
+                to exercise them, please read the <span>Privacy Policy.</span></p>
+        </form>
+        </div>
+    </section>
+    <section class="hero">
+        <div class="container slider">
             <img src="./assets/img/last-logo.svg" alt="hero-logo" class="hero-img">
             <div class="hero-line_basic">
                 <div class="hero-line_cursor"></div>
@@ -52,134 +104,37 @@
 
         </div>
     </section>
+
     <section class="cards">
-        <div class="container">
+        <div class=" container cards-arrow">
             <div class="cards-heading">
-                <h2 class="cards__title">HBO Original</h2>
+                <h2 class="cards__title">TV Shows</h2>
             </div>
-            <div class="cards-content">
-                <div class="card" style="background-image:url(./assets/img/card-1.png)">
-                    <div class="card-inside">
-                        <div class="card-visible">
-                            <div class="card-rating">
-                                <div class="star"><img src="./assets/img/rating.svg" alt=""></div>
-                                <div class="number">8.1</div>
-                            </div>
-                            <p class="card-year">2022</p>
-                        </div>
-                        <p class="season">Season 1</p>
-                        <h3 class="card-title">House of the Dragon</h3>
-                        <p class="card-subtitle">An internal succession war within House Targaryen at the height of its
-                            power, 172 years before the birth of Daenerys
-                            Targaryen.</p>
-                        <button class="card-button">WATCH</button>
-                    </div>
-                </div>
-                <div class="card" style="background-image:url(./assets/img/card-2.png)">
-                    <div class="card-inside">
-                        <div class="card-visible">
-                            <div class="card-rating">
-                                <div class="star"><img src="./assets/img/rating.svg" alt=""></div>
-                                <div class="number">8.1</div>
-                            </div>
-                            <p class="card-year">2022</p>
-                        </div>
-                        <p class="season">Season 1</p>
-                        <h3 class="card-title">House of the Dragon</h3>
-                        <p class="card-subtitle">An internal succession war within House Targaryen at the height of its
-                            power, 172 years before the birth of Daenerys
-                            Targaryen.</p>
-                        <button class="card-button">WATCH</button>
-                    </div>
-                </div>
-                <div class="card" style="background-image:url(./assets/img/card-3.png)">
-                    <div class="card-inside">
-                        <div class="card-visible">
-                            <div class="card-rating">
-                                <div class="star"><img src="./assets/img/rating.svg" alt=""></div>
-                                <div class="number">8.1</div>
-                            </div>
-                            <p class="card-year">2022</p>
-                        </div>
-                        <p class="season">Season 1</p>
-                        <h3 class="card-title">House of the Dragon</h3>
-                        <p class="card-subtitle">An internal succession war within House Targaryen at the height of its
-                            power, 172 years before the birth of Daenerys
-                            Targaryen.</p>
-                        <button class="card-button">WATCH</button>
-                    </div>
-                </div>
-                <div class="card" style="background-image:url(./assets/img/card-4.png)">
-                    <div class="card-inside">
-                        <div class="card-visible">
-                            <div class="card-rating">
-                                <div class="star"><img src="./assets/img/rating.svg" alt=""></div>
-                                <div class="number">8.1</div>
-                            </div>
-                            <p class="card-year">2022</p>
-                        </div>
-                        <p class="season">Season 1</p>
-                        <h3 class="card-title">House of the Dragon</h3>
-                        <p class="card-subtitle">An internal succession war within House Targaryen at the height of its
-                            power, 172 years before the birth of Daenerys
-                            Targaryen.</p>
-                        <button class="card-button">WATCH</button>
-                    </div>
-                </div>
-                <div class="card" style="background-image:url(./assets/img/card-5.png)">
-                    <div class="card-inside">
-                        <div class="card-visible">
-                            <div class="card-rating">
-                                <div class="star"><img src="./assets/img/rating.svg" alt=""></div>
-                                <div class="number">8.1</div>
-                            </div>
-                            <p class="card-year">2022</p>
-                        </div>
-                        <p class="season">Season 1</p>
-                        <h3 class="card-title">House of the Dragon</h3>
-                        <p class="card-subtitle">An internal succession war within House Targaryen at the height of its
-                            power, 172 years before the birth of Daenerys
-                            Targaryen.</p>
-                        <button class="card-button">WATCH</button>
-                    </div>
-                </div>
-                <div class="card" style="background-image:url(./assets/img/card-6.png)">
-                    <div class="card-inside">
-                        <div class="card-visible">
-                            <div class="card-rating">
-                                <div class="star"><img src="./assets/img/rating.svg" alt=""></div>
-                                <div class="number">8.1</div>
-                            </div>
-                            <p class="card-year">2022</p>
-                        </div>
-                        <p class="season">Season 1</p>
-                        <h3 class="card-title">House of the Dragon</h3>
-                        <p class="card-subtitle">An internal succession war within House Targaryen at the height of its
-                            power, 172 years before the birth of Daenerys
-                            Targaryen.</p>
-                        <button class="card-button">WATCH</button>
-                    </div>
-                </div>
-                <div class="card" style="background-image:url(./assets/img/card-1.png)">
-                    <div class="card-inside">
-                        <div class="card-visible">
-                            <div class="card-rating">
-                                <div class="star"><img src="./assets/img/rating.svg" alt=""></div>
-                                <div class="number">8.1</div>
-                            </div>
-                            <p class="card-year">2022</p>
-                        </div>
-                        <p class="season">Season 1</p>
-                        <h3 class="card-title">House of the Dragon</h3>
-                        <p class="card-subtitle">An internal succession war within House Targaryen at the height of its
-                            power, 172 years before the birth of Daenerys
-                            Targaryen.</p>
-                        <button class="card-button">WATCH</button>
-                    </div>
-                </div>
+            <div class="cards-content" id="tvshows">
             </div>
         </div>
     </section>
+    <section class="cards">
+        <div class="container cards-arrow">
+            <div class="cards-heading">
+                <h2 class="cards__title">Movies</h2>
+            </div>
+            <div class="cards-content" id="movies">
+
+            </div>
+        </div>
+    </section>
+    <section class="cards">
+        <div class="container cards-arrow">
+            <div class="cards-heading">
+                <h2 class="cards__title">Cartoons</h2>
+            </div>
+            <div class="cards-content" id="cartoons">
+
+            </div>
+        </div>
+    </section>
+
     <section class="sub">
         <div class="container">
             <div class="sub-title">
@@ -225,6 +180,96 @@
             </div>
         </div>
     </section>
+    <section class="faq">
+        <div class="container">
+            <h4 class="faq-title">FAQ</h4>
+            <div class="faq-item">
+                <div class="item-text">
+                    <p class="item-title">What is HBO Max?</p>
+                    <img src="./assets/img/plus.svg" alt="" class="faq-img">
+                </div>
+                <div class="item-subtext ">
+                    <p class="item-subtitle">HBO Max is a blockbuster streaming experience bringing you the
+                        greatest
+                        stories
+                        from Warner Bros., HBO, DC, Cartoon
+                        Network and much more, together for the very first time.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="item-text">
+                    <p class="item-title">How do I get help if I have any issues?</p>
+                    <img src="./assets/img/plus.svg" alt="" class="faq-img">
+                </div>
+                <div class="item-subtext ">
+                    <p class="item-subtitle">HBO Max is a blockbuster streaming experience bringing you the greatest
+                        stories
+                        from Warner Bros., HBO, DC, Cartoon
+                        Network and much more, together for the very first time.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="item-text">
+                    <p class="item-title">Is HBO Max good for kids & families?</p>
+                    <img src="./assets/img/plus.svg" alt="" class="faq-img">
+                </div>
+                <div class="item-subtext ">
+                    <p class="item-subtitle">HBO Max is a blockbuster streaming experience bringing you the greatest
+                        stories
+                        from Warner Bros., HBO, DC, Cartoon
+                        Network and much more, together for the very first time.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="item-text">
+                    <p class="item-title">How much does HBO Max cost?</p>
+                    <img src="./assets/img/plus.svg" alt="" class="faq-img">
+                </div>
+                <div class="item-subtext ">
+                    <p class="item-subtitle">HBO Max is a blockbuster streaming experience bringing you the greatest
+                        stories
+                        from Warner Bros., HBO, DC, Cartoon
+                        Network and much more, together for the very first time.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="item-text">
+                    <p class="item-title">Can I change or cancel my subscription?</p>
+                    <img src="./assets/img/plus.svg" alt="" class="faq-img">
+                </div>
+                <div class="item-subtext ">
+                    <p class="item-subtitle">HBO Max is a blockbuster streaming experience bringing you the greatest
+                        stories
+                        from Warner Bros., HBO, DC, Cartoon
+                        Network and much more, together for the very first time.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="item-text">
+                    <p class="item-title">Which devices can I stream HBO Max on?</p>
+                    <img src="./assets/img/plus.svg" alt="" class="faq-img">
+                </div>
+                <div class="item-subtext ">
+                    <p class="item-subtitle">HBO Max is a blockbuster streaming experience bringing you the greatest
+                        stories
+                        from Warner Bros., HBO, DC, Cartoon
+                        Network and much more, together for the very first time.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="item-text">
+                    <p class="item-title">How do I sign in to HBO Max?</p>
+                    <img src="./assets/img/plus.svg" alt="" class="faq-img">
+                </div>
+                <div class="item-subtext ">
+                    <p class="item-subtitle">HBO Max is a blockbuster streaming experience bringing you the greatest
+                        stories
+                        from Warner Bros., HBO, DC, Cartoon
+                        Network and much more, together for the very first time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -262,12 +307,14 @@
                         <button class="small-phone"></button>
                     </div>
                     <div class="big-button">
-                        <img src="./assets/img/hbo-max.png" alt="hbo-max image" class="hbo-max">
+                        <img src="./assets/img/hbo-max.png" alt="hbo-max image" class="hbo-max_image">
                     </div>
                 </div>
             </div>
             <div class="hbo-center">
+
                 <img src="./assets/img/hbo-logo.png" alt="center-logo" class="center-logo">
+                <img src="./assets/img/hbo-max.svg" alt="" class="hbo-max">
             </div>
             <div class="footer-text">
                 <p class="text-color">© 2023 Home Box Office, Inc. All Rights Reserved.<br>
@@ -275,6 +322,8 @@
             </div>
         </div>
     </footer>
+    <script src="./index.js"></script>
+    <script src="./data.js"></script>
 </body>
 
 </html>
